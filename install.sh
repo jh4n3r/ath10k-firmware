@@ -25,7 +25,7 @@
 # 
 
 echo "options ath10k_core skip_otp=y" | sudo tee /etc/modprobe.d/ath10k_core.conf
-tar -xvf qca9377.tar.xz
+tar -xvf ath10k.tar.xz
 sudo cp -r ath10k/ /lib/firmware/
 make defconfig-ath10k
 make -j9
